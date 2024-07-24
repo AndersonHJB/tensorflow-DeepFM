@@ -1,0 +1,740 @@
+D:\App\anaconda3\envs\DeepFM\python.exe C:\Users\clela\Desktop\tensorflow-DeepFM\example\main.py
+WARNING:tensorflow:From C:\Users\clela\Desktop\tensorflow-DeepFM\yellowfin.py:28: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From C:\Users\clela\Desktop\tensorflow-DeepFM\DeepFM.py:68: The name tf.set_random_seed is deprecated. Please use tf.compat.v1.set_random_seed instead.
+
+WARNING:tensorflow:From C:\Users\clela\Desktop\tensorflow-DeepFM\DeepFM.py:70: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From C:\Users\clela\Desktop\tensorflow-DeepFM\DeepFM.py:184: The name tf.random_normal is deprecated. Please use tf.random.normal instead.
+
+WARNING:tensorflow:From C:\Users\clela\Desktop\tensorflow-DeepFM\DeepFM.py:187: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING:tensorflow:From C:\Users\clela\Desktop\tensorflow-DeepFM\DeepFM.py:90: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From C:\Users\clela\Desktop\tensorflow-DeepFM\DeepFM.py:127: The name tf.losses.log_loss is deprecated. Please use tf.compat.v1.losses.log_loss instead.
+
+WARNING:tensorflow:From D:\App\anaconda3\envs\DeepFM\lib\site-packages\tensorflow_core\python\ops\losses\losses_impl.py:121: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+WARNING:tensorflow:From C:\Users\clela\Desktop\tensorflow-DeepFM\DeepFM.py:141: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+WARNING:tensorflow:From C:\Users\clela\Desktop\tensorflow-DeepFM\DeepFM.py:156: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+WARNING:tensorflow:From C:\Users\clela\Desktop\tensorflow-DeepFM\DeepFM.py:157: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+WARNING:tensorflow:From C:\Users\clela\Desktop\tensorflow-DeepFM\DeepFM.py:174: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From C:\Users\clela\Desktop\tensorflow-DeepFM\DeepFM.py:176: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2024-07-24 23:32:45.729763: I tensorflow/core/platform/cpu_feature_guard.cc:145] This TensorFlow binary is optimized with Intel(R) MKL-DNN to use the following CPU instructions in performance critical operations:  AVX AVX2
+To enable them in non-MKL-DNN operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-07-24 23:32:45.733111: I tensorflow/core/common_runtime/process_util.cc:115] Creating new thread pool with default inter op setting: 24. Tune using inter_op_parallelism_threads for best performance.
+#params: 13483
+OMP: Info #212: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #210: KMP_AFFINITY: Affinity capable, using global cpuid leaf 11 info
+OMP: Info #154: KMP_AFFINITY: Initial OS proc set respected: 0-23
+OMP: Info #156: KMP_AFFINITY: 24 available OS procs
+OMP: Info #158: KMP_AFFINITY: Nonuniform topology
+OMP: Info #179: KMP_AFFINITY: 1 packages x 16 cores/pkg x 2 threads/core (16 total cores)
+OMP: Info #214: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #171: KMP_AFFINITY: OS proc 0 maps to package 0 core 0 thread 0
+OMP: Info #171: KMP_AFFINITY: OS proc 1 maps to package 0 core 0 thread 1
+OMP: Info #171: KMP_AFFINITY: OS proc 2 maps to package 0 core 4 thread 0
+OMP: Info #171: KMP_AFFINITY: OS proc 3 maps to package 0 core 4 thread 1
+OMP: Info #171: KMP_AFFINITY: OS proc 4 maps to package 0 core 8 thread 0
+OMP: Info #171: KMP_AFFINITY: OS proc 5 maps to package 0 core 8 thread 1
+OMP: Info #171: KMP_AFFINITY: OS proc 6 maps to package 0 core 12 thread 0
+OMP: Info #171: KMP_AFFINITY: OS proc 7 maps to package 0 core 12 thread 1
+OMP: Info #171: KMP_AFFINITY: OS proc 8 maps to package 0 core 16 thread 0
+OMP: Info #171: KMP_AFFINITY: OS proc 9 maps to package 0 core 16 thread 1
+OMP: Info #171: KMP_AFFINITY: OS proc 10 maps to package 0 core 20 thread 0
+OMP: Info #171: KMP_AFFINITY: OS proc 11 maps to package 0 core 20 thread 1
+OMP: Info #171: KMP_AFFINITY: OS proc 12 maps to package 0 core 24 thread 0
+OMP: Info #171: KMP_AFFINITY: OS proc 13 maps to package 0 core 24 thread 1
+OMP: Info #171: KMP_AFFINITY: OS proc 14 maps to package 0 core 28 thread 0
+OMP: Info #171: KMP_AFFINITY: OS proc 15 maps to package 0 core 28 thread 1
+OMP: Info #171: KMP_AFFINITY: OS proc 16 maps to package 0 core 32 thread 0
+OMP: Info #171: KMP_AFFINITY: OS proc 17 maps to package 0 core 33 thread 0
+OMP: Info #171: KMP_AFFINITY: OS proc 18 maps to package 0 core 34 thread 0
+OMP: Info #171: KMP_AFFINITY: OS proc 19 maps to package 0 core 35 thread 0
+OMP: Info #171: KMP_AFFINITY: OS proc 20 maps to package 0 core 36 thread 0
+OMP: Info #171: KMP_AFFINITY: OS proc 21 maps to package 0 core 37 thread 0
+OMP: Info #171: KMP_AFFINITY: OS proc 22 maps to package 0 core 38 thread 0
+OMP: Info #171: KMP_AFFINITY: OS proc 23 maps to package 0 core 39 thread 0
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27608 thread 0 bound to OS proc set 0
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 9556 thread 1 bound to OS proc set 2
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 26720 thread 2 bound to OS proc set 4
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 25352 thread 13 bound to OS proc set 21
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 22568 thread 6 bound to OS proc set 12
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 24868 thread 3 bound to OS proc set 6
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28136 thread 7 bound to OS proc set 14
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27304 thread 4 bound to OS proc set 8
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28188 thread 8 bound to OS proc set 16
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 11208 thread 9 bound to OS proc set 17
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 10412 thread 10 bound to OS proc set 18
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 9988 thread 11 bound to OS proc set 19
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 11328 thread 12 bound to OS proc set 20
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28260 thread 14 bound to OS proc set 22
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 26396 thread 5 bound to OS proc set 10
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 16048 thread 15 bound to OS proc set 23
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 2104 thread 16 bound to OS proc set 1
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28268 thread 17 bound to OS proc set 3
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 13564 thread 23 bound to OS proc set 15
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 9924 thread 19 bound to OS proc set 7
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 2488 thread 20 bound to OS proc set 9
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 26812 thread 21 bound to OS proc set 11
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 12416 thread 22 bound to OS proc set 13
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 17552 thread 18 bound to OS proc set 5
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 2036 thread 24 bound to OS proc set 0
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27260 thread 25 bound to OS proc set 2
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 8904 thread 27 bound to OS proc set 6
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 24316 thread 28 bound to OS proc set 8
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 2520 thread 26 bound to OS proc set 4
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 26500 thread 29 bound to OS proc set 10
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 23216 thread 30 bound to OS proc set 12
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 20200 thread 31 bound to OS proc set 14
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 23556 thread 32 bound to OS proc set 16
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 11236 thread 33 bound to OS proc set 17
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27280 thread 37 bound to OS proc set 21
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 20876 thread 35 bound to OS proc set 19
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 25320 thread 42 bound to OS proc set 5
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 9716 thread 34 bound to OS proc set 18
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 1552 thread 45 bound to OS proc set 11
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27748 thread 39 bound to OS proc set 23
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 19712 thread 38 bound to OS proc set 22
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 6812 thread 41 bound to OS proc set 3
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 1992 thread 36 bound to OS proc set 20
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28484 thread 43 bound to OS proc set 7
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 10396 thread 44 bound to OS proc set 9
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27504 thread 46 bound to OS proc set 13
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 19764 thread 47 bound to OS proc set 15
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28652 thread 40 bound to OS proc set 1
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 8596 thread 48 bound to OS proc set 0
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 20312 thread 50 bound to OS proc set 4
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 6844 thread 49 bound to OS proc set 2
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 24308 thread 51 bound to OS proc set 6
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 7564 thread 52 bound to OS proc set 8
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27756 thread 53 bound to OS proc set 10
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28148 thread 54 bound to OS proc set 12
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 24000 thread 55 bound to OS proc set 14
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 24128 thread 57 bound to OS proc set 17
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 21684 thread 56 bound to OS proc set 16
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 25180 thread 58 bound to OS proc set 18
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 2308 thread 59 bound to OS proc set 19
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 516 thread 60 bound to OS proc set 20
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 25864 thread 61 bound to OS proc set 21
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 8984 thread 62 bound to OS proc set 22
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 4264 thread 63 bound to OS proc set 23
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27360 thread 64 bound to OS proc set 1
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 23768 thread 65 bound to OS proc set 3
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 6612 thread 66 bound to OS proc set 5
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27252 thread 72 bound to OS proc set 0
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27448 thread 68 bound to OS proc set 9
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 22032 thread 69 bound to OS proc set 11
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 14168 thread 70 bound to OS proc set 13
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28312 thread 71 bound to OS proc set 15
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 26508 thread 91 bound to OS proc set 7
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 23172 thread 73 bound to OS proc set 2
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 2264 thread 74 bound to OS proc set 4
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 23032 thread 75 bound to OS proc set 6
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 25048 thread 76 bound to OS proc set 8
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 22324 thread 77 bound to OS proc set 10
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28156 thread 78 bound to OS proc set 12
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 22772 thread 79 bound to OS proc set 14
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 6820 thread 80 bound to OS proc set 16
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 24452 thread 81 bound to OS proc set 17
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 3724 thread 82 bound to OS proc set 18
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 784 thread 83 bound to OS proc set 19
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 23572 thread 84 bound to OS proc set 20
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28160 thread 85 bound to OS proc set 21
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 3104 thread 86 bound to OS proc set 22
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 8920 thread 87 bound to OS proc set 23
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27356 thread 88 bound to OS proc set 1
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27864 thread 89 bound to OS proc set 3
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 6132 thread 90 bound to OS proc set 5
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 4392 thread 67 bound to OS proc set 7
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28176 thread 92 bound to OS proc set 9
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 4376 thread 93 bound to OS proc set 11
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 20416 thread 94 bound to OS proc set 13
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 2024 thread 95 bound to OS proc set 15
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 8436 thread 96 bound to OS proc set 0
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 23088 thread 97 bound to OS proc set 2
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28664 thread 98 bound to OS proc set 4
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 8576 thread 100 bound to OS proc set 8
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 22184 thread 99 bound to OS proc set 6
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 4104 thread 101 bound to OS proc set 10
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27092 thread 102 bound to OS proc set 12
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 8 thread 103 bound to OS proc set 14
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 22124 thread 104 bound to OS proc set 16
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 22220 thread 106 bound to OS proc set 18
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 24728 thread 107 bound to OS proc set 19
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 20228 thread 108 bound to OS proc set 20
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 2316 thread 109 bound to OS proc set 21
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 20264 thread 105 bound to OS proc set 17
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 25980 thread 110 bound to OS proc set 22
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 22832 thread 111 bound to OS proc set 23
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 25872 thread 112 bound to OS proc set 1
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 19876 thread 114 bound to OS proc set 5
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 24848 thread 113 bound to OS proc set 3
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 26828 thread 115 bound to OS proc set 7
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27540 thread 117 bound to OS proc set 11
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 8956 thread 116 bound to OS proc set 9
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 24536 thread 119 bound to OS proc set 15
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28436 thread 120 bound to OS proc set 0
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 964 thread 122 bound to OS proc set 4
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 2416 thread 121 bound to OS proc set 2
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 512 thread 118 bound to OS proc set 13
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 25292 thread 123 bound to OS proc set 6
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27976 thread 125 bound to OS proc set 10
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 19472 thread 124 bound to OS proc set 8
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27992 thread 126 bound to OS proc set 12
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 24164 thread 127 bound to OS proc set 14
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 26764 thread 128 bound to OS proc set 16
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 10128 thread 129 bound to OS proc set 17
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 23948 thread 130 bound to OS proc set 18
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 13368 thread 131 bound to OS proc set 19
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 10840 thread 132 bound to OS proc set 20
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 22956 thread 138 bound to OS proc set 5
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28600 thread 134 bound to OS proc set 22
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 10804 thread 143 bound to OS proc set 15
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27684 thread 144 bound to OS proc set 0
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 26532 thread 145 bound to OS proc set 2
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27888 thread 133 bound to OS proc set 21
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 20232 thread 147 bound to OS proc set 6
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 26184 thread 140 bound to OS proc set 9
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 15432 thread 141 bound to OS proc set 11
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27048 thread 150 bound to OS proc set 12
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28448 thread 135 bound to OS proc set 23
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 4608 thread 157 bound to OS proc set 21
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27428 thread 137 bound to OS proc set 3
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 1900 thread 146 bound to OS proc set 4
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 19556 thread 148 bound to OS proc set 8
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 24268 thread 149 bound to OS proc set 10
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 20216 thread 139 bound to OS proc set 7
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 23180 thread 142 bound to OS proc set 13
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 20428 thread 151 bound to OS proc set 14
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 26056 thread 152 bound to OS proc set 16
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 26000 thread 153 bound to OS proc set 17
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 19676 thread 154 bound to OS proc set 18
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 7380 thread 155 bound to OS proc set 19
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 11268 thread 156 bound to OS proc set 20
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 20180 thread 136 bound to OS proc set 1
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 7052 thread 158 bound to OS proc set 22
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 16240 thread 159 bound to OS proc set 23
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28400 thread 160 bound to OS proc set 1
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 23024 thread 161 bound to OS proc set 3
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 21836 thread 162 bound to OS proc set 5
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28000 thread 172 bound to OS proc set 8
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 25156 thread 164 bound to OS proc set 9
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 9828 thread 165 bound to OS proc set 11
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27704 thread 166 bound to OS proc set 13
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 3240 thread 167 bound to OS proc set 15
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 7204 thread 168 bound to OS proc set 0
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 19496 thread 169 bound to OS proc set 2
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 3264 thread 170 bound to OS proc set 4
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 23536 thread 171 bound to OS proc set 6
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 22804 thread 163 bound to OS proc set 7
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 4268 thread 173 bound to OS proc set 10
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 8716 thread 174 bound to OS proc set 12
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 26048 thread 175 bound to OS proc set 14
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27964 thread 176 bound to OS proc set 16
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 25592 thread 177 bound to OS proc set 17
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 25728 thread 178 bound to OS proc set 18
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 24472 thread 187 bound to OS proc set 7
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 23128 thread 180 bound to OS proc set 20
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 23176 thread 181 bound to OS proc set 21
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 7952 thread 189 bound to OS proc set 11
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 26748 thread 184 bound to OS proc set 1
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 25044 thread 185 bound to OS proc set 3
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27892 thread 183 bound to OS proc set 23
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 26980 thread 186 bound to OS proc set 5
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 3128 thread 179 bound to OS proc set 19
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 1468 thread 188 bound to OS proc set 9
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 22104 thread 182 bound to OS proc set 22
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 20116 thread 190 bound to OS proc set 13
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 2272 thread 191 bound to OS proc set 15
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 2648 thread 192 bound to OS proc set 0
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 11148 thread 193 bound to OS proc set 2
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 23192 thread 194 bound to OS proc set 4
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 10948 thread 195 bound to OS proc set 6
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 6164 thread 196 bound to OS proc set 8
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 20288 thread 197 bound to OS proc set 10
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 1988 thread 198 bound to OS proc set 12
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 24920 thread 199 bound to OS proc set 14
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 21924 thread 200 bound to OS proc set 16
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27692 thread 201 bound to OS proc set 17
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28384 thread 203 bound to OS proc set 19
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 26676 thread 204 bound to OS proc set 20
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 1256 thread 202 bound to OS proc set 18
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 8964 thread 205 bound to OS proc set 21
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27124 thread 206 bound to OS proc set 22
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27972 thread 207 bound to OS proc set 23
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 25884 thread 208 bound to OS proc set 1
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 20672 thread 209 bound to OS proc set 3
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 26492 thread 216 bound to OS proc set 0
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 21908 thread 211 bound to OS proc set 7
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 22048 thread 212 bound to OS proc set 9
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 21656 thread 213 bound to OS proc set 11
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 25092 thread 214 bound to OS proc set 13
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 5944 thread 215 bound to OS proc set 15
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 19656 thread 210 bound to OS proc set 5
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 25976 thread 217 bound to OS proc set 2
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 21808 thread 218 bound to OS proc set 4
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 20444 thread 219 bound to OS proc set 6
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 13932 thread 220 bound to OS proc set 8
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 18788 thread 221 bound to OS proc set 10
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 23288 thread 222 bound to OS proc set 12
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 22332 thread 223 bound to OS proc set 14
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 10092 thread 224 bound to OS proc set 16
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28292 thread 225 bound to OS proc set 17
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 19584 thread 226 bound to OS proc set 18
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 23704 thread 227 bound to OS proc set 19
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28648 thread 228 bound to OS proc set 20
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 24448 thread 229 bound to OS proc set 21
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 16092 thread 230 bound to OS proc set 22
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 19620 thread 231 bound to OS proc set 23
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 9552 thread 232 bound to OS proc set 1
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 14016 thread 233 bound to OS proc set 3
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 7036 thread 234 bound to OS proc set 5
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 10112 thread 235 bound to OS proc set 7
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28580 thread 236 bound to OS proc set 9
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 19552 thread 237 bound to OS proc set 11
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 11668 thread 238 bound to OS proc set 13
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 1848 thread 239 bound to OS proc set 15
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 11432 thread 240 bound to OS proc set 0
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27156 thread 241 bound to OS proc set 2
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 19176 thread 242 bound to OS proc set 4
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 2280 thread 244 bound to OS proc set 8
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27232 thread 245 bound to OS proc set 10
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 15192 thread 243 bound to OS proc set 6
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 22964 thread 246 bound to OS proc set 12
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 23720 thread 247 bound to OS proc set 14
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 8076 thread 248 bound to OS proc set 16
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 25940 thread 249 bound to OS proc set 17
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27656 thread 250 bound to OS proc set 18
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 20092 thread 251 bound to OS proc set 19
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 23464 thread 252 bound to OS proc set 20
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28116 thread 253 bound to OS proc set 21
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 19504 thread 254 bound to OS proc set 22
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27244 thread 255 bound to OS proc set 23
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 8252 thread 256 bound to OS proc set 1
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 13896 thread 258 bound to OS proc set 5
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 1484 thread 257 bound to OS proc set 3
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 792 thread 263 bound to OS proc set 15
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 26112 thread 261 bound to OS proc set 11
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 21472 thread 262 bound to OS proc set 13
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 25700 thread 259 bound to OS proc set 7
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 25908 thread 265 bound to OS proc set 2
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 7652 thread 264 bound to OS proc set 0
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 13692 thread 267 bound to OS proc set 6
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28584 thread 266 bound to OS proc set 4
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 4688 thread 260 bound to OS proc set 9
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 14008 thread 270 bound to OS proc set 12
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 4148 thread 271 bound to OS proc set 14
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 22576 thread 269 bound to OS proc set 10
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 26804 thread 268 bound to OS proc set 8
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 4212 thread 272 bound to OS proc set 16
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 6256 thread 273 bound to OS proc set 17
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 8608 thread 274 bound to OS proc set 18
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27524 thread 275 bound to OS proc set 19
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 26496 thread 276 bound to OS proc set 20
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 24944 thread 278 bound to OS proc set 22
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28324 thread 277 bound to OS proc set 21
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 8688 thread 280 bound to OS proc set 1
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 22916 thread 279 bound to OS proc set 23
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 5012 thread 283 bound to OS proc set 7
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 19560 thread 282 bound to OS proc set 5
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28656 thread 281 bound to OS proc set 3
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 19632 thread 284 bound to OS proc set 9
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 24092 thread 285 bound to OS proc set 11
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27876 thread 286 bound to OS proc set 13
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 7616 thread 287 bound to OS proc set 15
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 13600 thread 288 bound to OS proc set 0
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 25880 thread 289 bound to OS proc set 2
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 2548 thread 290 bound to OS proc set 4
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28032 thread 298 bound to OS proc set 18
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 13088 thread 292 bound to OS proc set 8
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 23208 thread 293 bound to OS proc set 10
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 3032 thread 301 bound to OS proc set 21
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 25060 thread 295 bound to OS proc set 14
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 14056 thread 296 bound to OS proc set 16
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 25876 thread 297 bound to OS proc set 17
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 24808 thread 291 bound to OS proc set 6
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 19760 thread 299 bound to OS proc set 19
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 19772 thread 300 bound to OS proc set 20
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 8272 thread 294 bound to OS proc set 12
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 11684 thread 302 bound to OS proc set 22
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 1944 thread 303 bound to OS proc set 23
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28356 thread 304 bound to OS proc set 1
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 19192 thread 305 bound to OS proc set 3
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27068 thread 313 bound to OS proc set 2
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 12972 thread 318 bound to OS proc set 12
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 3920 thread 308 bound to OS proc set 9
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 26712 thread 309 bound to OS proc set 11
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 1544 thread 310 bound to OS proc set 13
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 25024 thread 311 bound to OS proc set 15
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 25960 thread 312 bound to OS proc set 0
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 26892 thread 306 bound to OS proc set 5
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 24232 thread 314 bound to OS proc set 4
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 25904 thread 315 bound to OS proc set 6
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 5904 thread 316 bound to OS proc set 8
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 26652 thread 317 bound to OS proc set 10
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 5408 thread 307 bound to OS proc set 7
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 26192 thread 319 bound to OS proc set 14
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 18584 thread 320 bound to OS proc set 16
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28280 thread 321 bound to OS proc set 17
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 24672 thread 324 bound to OS proc set 20
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 26940 thread 323 bound to OS proc set 19
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28476 thread 325 bound to OS proc set 21
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28152 thread 322 bound to OS proc set 18
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 10148 thread 326 bound to OS proc set 22
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27132 thread 327 bound to OS proc set 23
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 24108 thread 328 bound to OS proc set 1
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 4160 thread 329 bound to OS proc set 3
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 4280 thread 330 bound to OS proc set 5
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27236 thread 331 bound to OS proc set 7
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 7344 thread 333 bound to OS proc set 11
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28308 thread 334 bound to OS proc set 13
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 25948 thread 332 bound to OS proc set 9
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 26136 thread 335 bound to OS proc set 15
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 24184 thread 336 bound to OS proc set 0
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 15904 thread 337 bound to OS proc set 2
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 22816 thread 346 bound to OS proc set 18
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 19284 thread 339 bound to OS proc set 6
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 22900 thread 340 bound to OS proc set 8
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 21820 thread 341 bound to OS proc set 10
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 23852 thread 342 bound to OS proc set 12
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 11576 thread 343 bound to OS proc set 14
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28344 thread 344 bound to OS proc set 16
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28416 thread 345 bound to OS proc set 17
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28212 thread 338 bound to OS proc set 4
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 3012 thread 347 bound to OS proc set 19
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 26664 thread 348 bound to OS proc set 20
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 25100 thread 349 bound to OS proc set 21
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28588 thread 350 bound to OS proc set 22
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 26780 thread 351 bound to OS proc set 23
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 24456 thread 352 bound to OS proc set 1
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28184 thread 353 bound to OS proc set 3
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27956 thread 359 bound to OS proc set 15
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 780 thread 355 bound to OS proc set 7
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27852 thread 356 bound to OS proc set 9
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 18936 thread 357 bound to OS proc set 11
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 4852 thread 358 bound to OS proc set 13
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 24044 thread 354 bound to OS proc set 5
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 2248 thread 360 bound to OS proc set 0
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 23620 thread 361 bound to OS proc set 2
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27712 thread 362 bound to OS proc set 4
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 7140 thread 363 bound to OS proc set 6
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 26716 thread 364 bound to OS proc set 8
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 23920 thread 365 bound to OS proc set 10
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 22520 thread 366 bound to OS proc set 12
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 16064 thread 367 bound to OS proc set 14
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 18864 thread 368 bound to OS proc set 16
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 19928 thread 369 bound to OS proc set 17
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28332 thread 370 bound to OS proc set 18
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 3688 thread 376 bound to OS proc set 1
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 28572 thread 372 bound to OS proc set 20
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 27716 thread 378 bound to OS proc set 5
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 16788 thread 374 bound to OS proc set 22
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 8784 thread 375 bound to OS proc set 23
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 22400 thread 371 bound to OS proc set 19
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 21576 thread 377 bound to OS proc set 3
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 26012 thread 373 bound to OS proc set 21
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 24356 thread 379 bound to OS proc set 7
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 23656 thread 380 bound to OS proc set 9
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 13332 thread 381 bound to OS proc set 11
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 22352 thread 382 bound to OS proc set 13
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 9120 thread 383 bound to OS proc set 15
+[1] train-result=-0.0045, valid-result=0.0395 [18.3 s]
+[2] train-result=0.2190, valid-result=0.2256 [11.6 s]
+[3] train-result=0.2392, valid-result=0.2284 [9.8 s]
+[4] train-result=0.2611, valid-result=0.2481 [10.9 s]
+[5] train-result=0.2657, valid-result=0.2507 [10.5 s]
+[6] train-result=0.2700, valid-result=0.2550 [9.6 s]
+[7] train-result=0.2734, valid-result=0.2586 [9.7 s]
+[8] train-result=0.2754, valid-result=0.2604 [9.2 s]
+[9] train-result=0.2771, valid-result=0.2614 [10.3 s]
+[10] train-result=0.2783, valid-result=0.2628 [10.4 s]
+[11] train-result=0.2796, valid-result=0.2634 [9.4 s]
+[12] train-result=0.2802, valid-result=0.2641 [10.6 s]
+[13] train-result=0.2807, valid-result=0.2640 [9.2 s]
+[14] train-result=0.2813, valid-result=0.2642 [9.9 s]
+[15] train-result=0.2816, valid-result=0.2652 [10.2 s]
+[16] train-result=0.2821, valid-result=0.2651 [10.3 s]
+[17] train-result=0.2821, valid-result=0.2653 [12.2 s]
+[18] train-result=0.2824, valid-result=0.2651 [12.4 s]
+[19] train-result=0.2826, valid-result=0.2652 [9.8 s]
+[20] train-result=0.2827, valid-result=0.2657 [9.9 s]
+[21] train-result=0.2829, valid-result=0.2650 [10.2 s]
+[22] train-result=0.2828, valid-result=0.2659 [10.0 s]
+[23] train-result=0.2833, valid-result=0.2656 [9.7 s]
+[24] train-result=0.2831, valid-result=0.2656 [10.3 s]
+[25] train-result=0.2833, valid-result=0.2651 [9.3 s]
+[26] train-result=0.2834, valid-result=0.2655 [10.4 s]
+[27] train-result=0.2835, valid-result=0.2658 [10.5 s]
+[28] train-result=0.2836, valid-result=0.2656 [10.4 s]
+[29] train-result=0.2838, valid-result=0.2660 [10.6 s]
+[30] train-result=0.2837, valid-result=0.2655 [9.6 s]
+#params: 13483
+[1] train-result=0.1002, valid-result=0.1329 [11.8 s]
+[2] train-result=0.2421, valid-result=0.2400 [10.9 s]
+[3] train-result=0.2614, valid-result=0.2551 [11.6 s]
+[4] train-result=0.2664, valid-result=0.2586 [10.9 s]
+[5] train-result=0.2706, valid-result=0.2619 [10.5 s]
+[6] train-result=0.2731, valid-result=0.2631 [10.7 s]
+[7] train-result=0.2752, valid-result=0.2640 [11.0 s]
+[8] train-result=0.2764, valid-result=0.2656 [10.5 s]
+[9] train-result=0.2771, valid-result=0.2668 [10.8 s]
+[10] train-result=0.2782, valid-result=0.2670 [11.6 s]
+[11] train-result=0.2786, valid-result=0.2668 [9.6 s]
+[12] train-result=0.2790, valid-result=0.2672 [10.3 s]
+[13] train-result=0.2791, valid-result=0.2672 [10.6 s]
+[14] train-result=0.2794, valid-result=0.2671 [11.6 s]
+[15] train-result=0.2799, valid-result=0.2675 [10.8 s]
+[16] train-result=0.2800, valid-result=0.2669 [11.2 s]
+[17] train-result=0.2798, valid-result=0.2667 [10.4 s]
+[18] train-result=0.2802, valid-result=0.2673 [10.3 s]
+[19] train-result=0.2803, valid-result=0.2676 [10.4 s]
+[20] train-result=0.2804, valid-result=0.2675 [10.2 s]
+[21] train-result=0.2804, valid-result=0.2678 [10.3 s]
+[22] train-result=0.2805, valid-result=0.2678 [10.5 s]
+[23] train-result=0.2803, valid-result=0.2675 [9.5 s]
+[24] train-result=0.2806, valid-result=0.2681 [11.0 s]
+[25] train-result=0.2809, valid-result=0.2684 [10.5 s]
+[26] train-result=0.2808, valid-result=0.2679 [10.3 s]
+[27] train-result=0.2810, valid-result=0.2681 [11.1 s]
+[28] train-result=0.2811, valid-result=0.2683 [11.4 s]
+[29] train-result=0.2810, valid-result=0.2680 [11.6 s]
+[30] train-result=0.2812, valid-result=0.2687 [10.2 s]
+#params: 13483
+[1] train-result=0.0295, valid-result=0.0658 [11.4 s]
+[2] train-result=0.2198, valid-result=0.2305 [10.5 s]
+[3] train-result=0.2553, valid-result=0.2399 [10.2 s]
+[4] train-result=0.2579, valid-result=0.2512 [10.0 s]
+[5] train-result=0.2592, valid-result=0.2513 [10.7 s]
+[6] train-result=0.2603, valid-result=0.2509 [10.0 s]
+[7] train-result=0.2710, valid-result=0.2619 [10.7 s]
+[8] train-result=0.2678, valid-result=0.2596 [10.5 s]
+[9] train-result=0.2672, valid-result=0.2590 [9.9 s]
+[10] train-result=0.2668, valid-result=0.2565 [10.1 s]
+[11] train-result=0.2713, valid-result=0.2619 [9.9 s]
+[12] train-result=0.2734, valid-result=0.2602 [9.8 s]
+[13] train-result=0.2736, valid-result=0.2616 [11.1 s]
+[14] train-result=0.2706, valid-result=0.2627 [11.1 s]
+[15] train-result=0.2726, valid-result=0.2624 [10.1 s]
+[16] train-result=0.2730, valid-result=0.2617 [10.9 s]
+[17] train-result=0.2732, valid-result=0.2643 [11.0 s]
+[18] train-result=0.2724, valid-result=0.2629 [10.9 s]
+[19] train-result=0.2700, valid-result=0.2618 [11.7 s]
+[20] train-result=0.2732, valid-result=0.2638 [10.3 s]
+[21] train-result=0.2738, valid-result=0.2639 [9.7 s]
+[22] train-result=0.2724, valid-result=0.2628 [10.1 s]
+[23] train-result=0.2693, valid-result=0.2638 [10.8 s]
+[24] train-result=0.2741, valid-result=0.2658 [11.4 s]
+[25] train-result=0.2742, valid-result=0.2638 [10.9 s]
+[26] train-result=0.2720, valid-result=0.2652 [11.0 s]
+[27] train-result=0.2744, valid-result=0.2650 [9.8 s]
+[28] train-result=0.2754, valid-result=0.2658 [10.2 s]
+[29] train-result=0.2773, valid-result=0.2653 [9.8 s]
+[30] train-result=0.2749, valid-result=0.2644 [10.6 s]
+DeepFM: 0.26622 (0.00179)
+OMP: Info #250: KMP_AFFINITY: pid 27904 tid 7252 thread 384 bound to OS proc set 0
+#params: 13451
+[1] train-result=0.2527, valid-result=0.2426 [8.0 s]
+[2] train-result=0.2707, valid-result=0.2556 [7.6 s]
+[3] train-result=0.2744, valid-result=0.2582 [8.0 s]
+[4] train-result=0.2768, valid-result=0.2601 [7.8 s]
+[5] train-result=0.2790, valid-result=0.2624 [7.6 s]
+[6] train-result=0.2796, valid-result=0.2619 [8.3 s]
+[7] train-result=0.2812, valid-result=0.2634 [8.2 s]
+[8] train-result=0.2818, valid-result=0.2643 [7.4 s]
+[9] train-result=0.2841, valid-result=0.2641 [7.9 s]
+[10] train-result=0.2872, valid-result=0.2659 [7.4 s]
+[11] train-result=0.2871, valid-result=0.2653 [7.9 s]
+[12] train-result=0.2894, valid-result=0.2659 [7.8 s]
+[13] train-result=0.2907, valid-result=0.2656 [7.9 s]
+[14] train-result=0.2909, valid-result=0.2657 [7.1 s]
+[15] train-result=0.2921, valid-result=0.2665 [7.7 s]
+[16] train-result=0.2927, valid-result=0.2654 [7.2 s]
+[17] train-result=0.2927, valid-result=0.2645 [7.9 s]
+[18] train-result=0.2933, valid-result=0.2653 [7.8 s]
+[19] train-result=0.2940, valid-result=0.2655 [7.9 s]
+[20] train-result=0.2944, valid-result=0.2661 [7.2 s]
+[21] train-result=0.2947, valid-result=0.2652 [7.9 s]
+[22] train-result=0.2955, valid-result=0.2661 [7.3 s]
+[23] train-result=0.2954, valid-result=0.2662 [7.7 s]
+[24] train-result=0.2979, valid-result=0.2655 [8.3 s]
+[25] train-result=0.2997, valid-result=0.2649 [8.0 s]
+[26] train-result=0.3010, valid-result=0.2662 [7.7 s]
+[27] train-result=0.3012, valid-result=0.2664 [7.8 s]
+[28] train-result=0.3037, valid-result=0.2655 [7.4 s]
+[29] train-result=0.3038, valid-result=0.2660 [8.2 s]
+[30] train-result=0.3057, valid-result=0.2653 [7.4 s]
+#params: 13451
+[1] train-result=0.2494, valid-result=0.2417 [8.4 s]
+[2] train-result=0.2659, valid-result=0.2561 [7.8 s]
+[3] train-result=0.2714, valid-result=0.2610 [8.4 s]
+[4] train-result=0.2741, valid-result=0.2605 [8.8 s]
+[5] train-result=0.2765, valid-result=0.2644 [8.4 s]
+[6] train-result=0.2776, valid-result=0.2654 [8.2 s]
+[7] train-result=0.2783, valid-result=0.2654 [8.5 s]
+[8] train-result=0.2790, valid-result=0.2672 [8.3 s]
+[9] train-result=0.2796, valid-result=0.2671 [8.3 s]
+[10] train-result=0.2803, valid-result=0.2674 [9.4 s]
+[11] train-result=0.2809, valid-result=0.2670 [8.6 s]
+[12] train-result=0.2815, valid-result=0.2677 [9.1 s]
+[13] train-result=0.2822, valid-result=0.2689 [8.6 s]
+[14] train-result=0.2839, valid-result=0.2689 [9.1 s]
+[15] train-result=0.2863, valid-result=0.2694 [9.1 s]
+[16] train-result=0.2878, valid-result=0.2709 [9.9 s]
+[17] train-result=0.2897, valid-result=0.2708 [9.5 s]
+[18] train-result=0.2925, valid-result=0.2706 [8.8 s]
+[19] train-result=0.2934, valid-result=0.2714 [8.5 s]
+[20] train-result=0.2964, valid-result=0.2719 [8.3 s]
+[21] train-result=0.2984, valid-result=0.2712 [8.6 s]
+[22] train-result=0.3004, valid-result=0.2708 [8.7 s]
+[23] train-result=0.3016, valid-result=0.2706 [8.5 s]
+[24] train-result=0.3033, valid-result=0.2719 [8.3 s]
+[25] train-result=0.3045, valid-result=0.2724 [9.1 s]
+[26] train-result=0.3065, valid-result=0.2704 [8.4 s]
+[27] train-result=0.3063, valid-result=0.2696 [8.7 s]
+[28] train-result=0.3074, valid-result=0.2706 [8.6 s]
+[29] train-result=0.3088, valid-result=0.2694 [7.6 s]
+[30] train-result=0.3078, valid-result=0.2711 [7.8 s]
+#params: 13451
+[1] train-result=0.2504, valid-result=0.2445 [8.3 s]
+[2] train-result=0.2655, valid-result=0.2558 [9.1 s]
+[3] train-result=0.2714, valid-result=0.2602 [8.3 s]
+[4] train-result=0.2750, valid-result=0.2633 [8.6 s]
+[5] train-result=0.2769, valid-result=0.2637 [8.7 s]
+[6] train-result=0.2789, valid-result=0.2651 [8.8 s]
+[7] train-result=0.2798, valid-result=0.2649 [8.6 s]
+[8] train-result=0.2805, valid-result=0.2660 [9.1 s]
+[9] train-result=0.2807, valid-result=0.2658 [8.5 s]
+[10] train-result=0.2812, valid-result=0.2663 [7.9 s]
+[11] train-result=0.2814, valid-result=0.2668 [8.8 s]
+[12] train-result=0.2821, valid-result=0.2665 [8.8 s]
+[13] train-result=0.2834, valid-result=0.2675 [8.4 s]
+[14] train-result=0.2842, valid-result=0.2679 [9.2 s]
+[15] train-result=0.2855, valid-result=0.2681 [8.4 s]
+[16] train-result=0.2864, valid-result=0.2685 [8.6 s]
+[17] train-result=0.2881, valid-result=0.2694 [8.9 s]
+[18] train-result=0.2887, valid-result=0.2682 [8.6 s]
+[19] train-result=0.2901, valid-result=0.2688 [8.7 s]
+[20] train-result=0.2915, valid-result=0.2683 [9.2 s]
+[21] train-result=0.2912, valid-result=0.2666 [8.7 s]
+[22] train-result=0.2919, valid-result=0.2674 [9.8 s]
+[23] train-result=0.2929, valid-result=0.2676 [10.1 s]
+[24] train-result=0.2928, valid-result=0.2689 [8.6 s]
+[25] train-result=0.2937, valid-result=0.2686 [8.5 s]
+[26] train-result=0.2937, valid-result=0.2665 [8.6 s]
+[27] train-result=0.2955, valid-result=0.2682 [8.6 s]
+[28] train-result=0.2957, valid-result=0.2681 [8.1 s]
+[29] train-result=0.2977, valid-result=0.2676 [9.0 s]
+[30] train-result=0.2990, valid-result=0.2688 [8.2 s]
+FM: 0.26839 (0.00238)
+#params: 13436
+[1] train-result=-0.0368, valid-result=0.0132 [12.0 s]
+[2] train-result=0.0265, valid-result=0.0210 [11.4 s]
+[3] train-result=0.0560, valid-result=0.0724 [11.3 s]
+[4] train-result=-0.0432, valid-result=0.0149 [11.6 s]
+[5] train-result=0.1403, valid-result=0.1543 [11.7 s]
+[6] train-result=0.1316, valid-result=0.1383 [12.0 s]
+[7] train-result=0.0961, valid-result=0.1534 [12.1 s]
+[8] train-result=0.1330, valid-result=0.1885 [11.8 s]
+[9] train-result=0.0904, valid-result=0.0655 [12.0 s]
+[10] train-result=0.1914, valid-result=0.2269 [10.7 s]
+[11] train-result=0.1847, valid-result=0.1712 [12.7 s]
+[12] train-result=0.2032, valid-result=0.2024 [11.5 s]
+[13] train-result=0.1892, valid-result=0.2058 [15.2 s]
+[14] train-result=0.2564, valid-result=0.2485 [13.9 s]
+[15] train-result=0.2575, valid-result=0.2410 [12.4 s]
+[16] train-result=0.2700, valid-result=0.2582 [11.9 s]
+[17] train-result=0.2713, valid-result=0.2622 [11.0 s]
+[18] train-result=0.2671, valid-result=0.2557 [12.2 s]
+[19] train-result=0.2765, valid-result=0.2609 [14.1 s]
+[20] train-result=0.2723, valid-result=0.2572 [15.1 s]
+[21] train-result=0.2767, valid-result=0.2598 [13.2 s]
+[22] train-result=0.2735, valid-result=0.2545 [11.5 s]
+[23] train-result=0.2740, valid-result=0.2552 [11.8 s]
+[24] train-result=0.2764, valid-result=0.2582 [14.1 s]
+[25] train-result=0.2778, valid-result=0.2569 [15.0 s]
+[26] train-result=0.2768, valid-result=0.2582 [12.4 s]
+[27] train-result=0.2741, valid-result=0.2559 [13.3 s]
+[28] train-result=0.2710, valid-result=0.2556 [10.4 s]
+[29] train-result=0.2730, valid-result=0.2576 [11.7 s]
+[30] train-result=0.2756, valid-result=0.2596 [13.2 s]
+#params: 13436
+[1] train-result=0.0178, valid-result=0.0362 [11.7 s]
+[2] train-result=0.0073, valid-result=0.0415 [11.6 s]
+[3] train-result=0.0453, valid-result=0.0452 [12.2 s]
+[4] train-result=-0.0647, valid-result=-0.0574 [13.2 s]
+[5] train-result=0.0686, valid-result=0.1527 [12.8 s]
+[6] train-result=0.0520, valid-result=0.0402 [14.9 s]
+[7] train-result=0.0960, valid-result=0.1229 [12.8 s]
+[8] train-result=0.1510, valid-result=0.1491 [14.1 s]
+[9] train-result=0.2152, valid-result=0.2196 [14.0 s]
+[10] train-result=0.1771, valid-result=0.1729 [16.7 s]
+[11] train-result=0.1697, valid-result=0.1837 [14.7 s]
+[12] train-result=0.2272, valid-result=0.2255 [12.7 s]
+[13] train-result=0.2643, valid-result=0.2494 [16.8 s]
+[14] train-result=0.2439, valid-result=0.2235 [14.4 s]
+[15] train-result=0.2607, valid-result=0.2530 [11.4 s]
+[16] train-result=0.2509, valid-result=0.2428 [13.4 s]
+[17] train-result=0.2648, valid-result=0.2527 [13.6 s]
+[18] train-result=0.2685, valid-result=0.2624 [13.5 s]
+[19] train-result=0.2711, valid-result=0.2563 [13.2 s]
+[20] train-result=0.2724, valid-result=0.2576 [14.5 s]
+[21] train-result=0.2715, valid-result=0.2568 [14.3 s]
+[22] train-result=0.2738, valid-result=0.2600 [14.8 s]
+[23] train-result=0.2705, valid-result=0.2613 [16.3 s]
+[24] train-result=0.2731, valid-result=0.2570 [16.8 s]
+[25] train-result=0.2660, valid-result=0.2535 [16.1 s]
+[26] train-result=0.2724, valid-result=0.2644 [14.7 s]
+[27] train-result=0.2705, valid-result=0.2568 [15.4 s]
+[28] train-result=0.2698, valid-result=0.2610 [12.8 s]
+[29] train-result=0.2714, valid-result=0.2578 [13.3 s]
+[30] train-result=0.2736, valid-result=0.2584 [11.3 s]
+#params: 13436
+[1] train-result=-0.0377, valid-result=-0.0596 [12.8 s]
+[2] train-result=-0.1416, valid-result=-0.0577 [10.4 s]
+[3] train-result=0.1017, valid-result=0.1140 [11.8 s]
+[4] train-result=0.1219, valid-result=0.1391 [13.9 s]
+[5] train-result=0.0739, valid-result=0.1104 [12.7 s]
+[6] train-result=0.1259, valid-result=0.1174 [12.9 s]
+[7] train-result=0.1829, valid-result=0.1418 [10.6 s]
+[8] train-result=0.2216, valid-result=0.2118 [14.2 s]
+[9] train-result=0.1710, valid-result=0.1846 [13.4 s]
+[10] train-result=0.1866, valid-result=0.1958 [16.0 s]
+[11] train-result=0.2089, valid-result=0.1953 [16.6 s]
+[12] train-result=0.2179, valid-result=0.2078 [12.9 s]
+[13] train-result=0.2418, valid-result=0.2252 [12.5 s]
+[14] train-result=0.2486, valid-result=0.2168 [13.1 s]
+[15] train-result=0.2544, valid-result=0.2363 [11.2 s]
+[16] train-result=0.2307, valid-result=0.2088 [11.2 s]
+[17] train-result=0.2590, valid-result=0.2388 [10.6 s]
+[18] train-result=0.2568, valid-result=0.2440 [12.4 s]
+[19] train-result=0.2711, valid-result=0.2609 [13.0 s]
+[20] train-result=0.2719, valid-result=0.2599 [11.8 s]
+[21] train-result=0.2744, valid-result=0.2629 [13.3 s]
+[22] train-result=0.2709, valid-result=0.2579 [11.6 s]
+[23] train-result=0.2736, valid-result=0.2614 [14.7 s]
+[24] train-result=0.2755, valid-result=0.2612 [14.1 s]
+[25] train-result=0.2751, valid-result=0.2587 [13.2 s]
+[26] train-result=0.2726, valid-result=0.2612 [13.2 s]
+[27] train-result=0.2722, valid-result=0.2549 [12.1 s]
+[28] train-result=0.2712, valid-result=0.2519 [13.1 s]
+[29] train-result=0.2680, valid-result=0.2544 [13.1 s]
+[30] train-result=0.2734, valid-result=0.2541 [18.1 s]
+DNN: 0.25726 (0.00240)
+
+Process finished with exit code 0
