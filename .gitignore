@@ -106,6 +106,6 @@ venv.bak/
 __pycache__/
 example/__pycache__/
 example/data/*.csv
-example/output/*.csv
+#example/output/*.csv
 #yellowfin.py
 data
