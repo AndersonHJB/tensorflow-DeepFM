@@ -41,7 +41,7 @@ class FeatureDictionary(object):
                 tc += 1
             else:
                 us = df[col].unique()
-                self.feat_dict[col] = dict(zip(us, range(tc, len(us)+tc)))
+                self.feat_dict[col] = dict(zip(us, range(tc, len(us) + tc)))
                 tc += len(us)
         self.feat_dim = tc
 
@@ -85,4 +85,3 @@ class DataParser(object):
             return Xi, Xv, y
         else:
             return Xi, Xv, ids
-
