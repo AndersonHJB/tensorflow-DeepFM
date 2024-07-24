@@ -1,5 +1,5 @@
-
 import numpy as np
+
 
 def gini(actual, pred):
     assert (len(actual) == len(pred))
@@ -10,6 +10,7 @@ def gini(actual, pred):
 
     giniSum -= (len(actual) + 1) / 2.
     return giniSum / len(actual)
+
 
 def gini_norm(actual, pred):
     return gini(actual, pred) / gini(actual, actual)
