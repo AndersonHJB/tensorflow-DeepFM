@@ -22,6 +22,12 @@ conda env create -f environment.yml
 
 4. 运行模型
 
+激活环境：使用以下命令激活新创建的环境：
+
+```bash
+conda activate 环境名
+```
+
 ```bash
 python main.py
 ```
